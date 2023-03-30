@@ -3,4 +3,4 @@
 
 - DON'T LOSE YOUR WAY IN YOUR MIND
 
-[![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kokic&utcOffset=8)](https://github.com/kokic)
+<!-- [![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kokic&utcOffset=8)](https://github.com/kokic) -->
