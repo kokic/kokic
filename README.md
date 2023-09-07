@@ -3,7 +3,7 @@
 
 <br>
 
-$$0\gt-\int_S(\text{Poincaré metric})=4\pi(1-g)$$
+$$0\gt-\int_S(\text{Poincar$\acute{\text{e}}$ metric})=4\pi(1-g)$$
 
 $$\begin{gathered}
 & & X & & \\
