@@ -6,4 +6,12 @@
 
 $$0\gt-\int_S(\text{Poincaré metric})=4\pi(1-g)$$
 
+$$\Huge\begin{gathered}
+& & X & & \\
+& \nearrow & & \searrow & \\
+L^{\Box} \overset{\exists!}\dashrightarrow X \underset{Z}{\times} Y & & & & X \underset{Z}{\sqcup} Y \overset{\exists!}\dashrightarrow L^{\boxplus} \\
+& \searrow & & \nearrow & \\
+& & Y & &
+\end{gathered}$$
+
 <!-- [![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kokic&utcOffset=8)](https://github.com/kokic) -->
