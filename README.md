@@ -6,7 +6,7 @@
 
 $$0\gt-\int_S(\text{Poincaré metric})=4\pi(1-g)$$
 
-$$\Huge\begin{gathered}
+$$\huge\begin{gathered}
 & & X & & \\
 & \nearrow & & \searrow & \\
 L^{\Box} \overset{\exists!}\dashrightarrow X \underset{Z}{\times} Y & & & & X \underset{Z}{\sqcup} Y \overset{\exists!}\dashrightarrow L^{\boxplus} \\
