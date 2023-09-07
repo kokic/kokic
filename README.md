@@ -15,5 +15,4 @@ L^{\Box} \overset{\exists!}\dashrightarrow X \underset{Z}{\times} Y & & & & X \u
 
 <!-- [![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kokic&utcOffset=8)](https://github.com/kokic) -->
 
-
-<img align="right" src="https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+cpp+java+ejs+python+c+shell" />
+- [most used languages](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+cpp+java+ejs+python+c+shell)
