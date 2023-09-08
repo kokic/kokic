@@ -6,6 +6,10 @@
 
   <style>
 
+    svg {
+      border-radius: 10em;
+    }
+
     .planet1 {
       animation: planet1_action 8s linear infinite;
     }
