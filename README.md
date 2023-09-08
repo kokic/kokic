@@ -15,7 +15,7 @@ L^{\Box} \overset{\exists!}\dashrightarrow X \underset{Z}{\times} Y & & & & X \u
 
 <!-- [![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kokic&utcOffset=8)](https://github.com/kokic) -->
 
-<!-- ![](./hodge-theater-combinatorial-structure.svg) -->
+![](./hodge-theater-combinatorial-structure.svg)
 
 
 <!-- - [𝕄𝕠𝕤𝕥 𝕌𝕤𝕖𝕕 𝕃𝕒𝕟𝕘𝕦𝕒𝕘𝕖𝕤](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+cpp+java+ejs+python+c+shell) -->
