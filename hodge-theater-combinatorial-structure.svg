@@ -7,7 +7,7 @@
   <style>
 
     svg {
-      border-radius: 10em;
+      border-radius: 20em;
     }
 
     .planet1 {
