@@ -9,6 +9,7 @@
 
 
 ![](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+java+ejs+python+shell+cpp+c)
+![](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+stylus+css+ejs+haskell+lean+tex+shell+ocaml+rust)
 
 
 </div>
