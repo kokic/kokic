@@ -7,7 +7,12 @@
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kokic&exclude=js,html,python,java,cpp)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=kokic)
 
+
+![](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+java+ejs+python+shell+cpp+c)
+
+
 </div>
+
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
@@ -17,12 +22,5 @@
 
 > [!WARNING]  
 > Critical content demanding immediate user attention due to potential risks.
-
-
-<div align="center">
-  
-![](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+java+ejs+python+shell+cpp+c)
-
-</div>
 
 
