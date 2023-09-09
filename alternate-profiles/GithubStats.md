@@ -18,6 +18,11 @@
 > [!WARNING]  
 > Critical content demanding immediate user attention due to potential risks.
 
+
+<div align="center">
+  
 ![](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+java+ejs+python+shell+cpp+c)
+
+</div>
 
 
