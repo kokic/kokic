@@ -1,4 +1,9 @@
 
+$$
+\uparrow
+\kern{-6.66pt}{\raise{-0.9em}|}
+$$
+
 $$\begin{gathered}
 & & \pm & \to & \pm & & \\
 & \nearrow & & & & \searrow & \\
