@@ -1,25 +1,53 @@
+```ts
+type ParseResult<α> =
+  | { type: "success", pos: StringIterator, res: α }
+  | { type: "error", pos: StringIterator, err: string }
 
-<!-- - DON'T LOSE YOUR WAY IN YOUR MIND
+const success = <α>(pos: StringIterator, res: α)
+  : ParseResult<α> => ({ type: "success", pos, res })
 
-$$0\gt-\int_S(\text{Poincar$\acute{\text{e}}$ metric})=4\pi(1-g)$$
+const error = <α>(pos: StringIterator, err: string)
+  : ParseResult<α> => ({ type: "error", pos, err })
 
--->
+type Parsec<α> = (input: StringIterator) => ParseResult<α>
 
+const pure = <α>(a: α): Parsec<α> => it => success(it, a)
 
+const bind = <α, β>(f: Parsec<α>, g: (a: α) => Parsec<β>): Parsec<β> =>
+  (it: StringIterator) => match(f(it))
+    .with({ type: 'success' }, ({ pos, res }) => g(res)(pos))
+    .with({ type: 'error' }, ({ pos, err }) => error<β>(pos, err))
+    .exhaustive()
 
-<!-- [](https://github.com/kokic) -->
+const fail = <α>(msg: string): Parsec<α> => it => error(it, msg)
 
-<img src="./hodge-theater-combinatorial-structure.svg">
+const orElse = <α>(p: Parsec<α>, q: Parsec<α>): Parsec<α> =>
+  (it: StringIterator) => match(p(it))
+    .with({ type: 'success' }, r => r)
+    .with({ type: 'error' }, r => it == r.pos ? q(it) : r)
+    .exhaustive()
 
+const attempt = <α>(p: Parsec<α>): Parsec<α> =>
+  (it: StringIterator) => match(p(it))
+    .with({ type: 'success' }, r => r)
+    .with({ type: 'error' }, ({ err }) => error<α>(it, err))
+    .exhaustive()
 
-<!-- - [𝕄𝕠𝕤𝕥 𝕌𝕤𝕖𝕕 𝕃𝕒𝕟𝕘𝕦𝕒𝕘𝕖𝕤](https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+cpp+java+ejs+python+c+shell) -->
+const pstring = (s: string): Parsec<string> =>
+  (it: StringIterator 
+    , pos = it.forward(s.length)
+    , substr = it.extract(pos)) =>
+    substr == s
+      ? success(pos, substr)
+      : error(it, `expected: ${s}`)
 
-<!--
-<img align="right" width="30%" src="https://aster-readme.vercel.app/api/top-langs/?username=kokic&layout=compact&exclude_lang=html+javascript+stylus+css+cpp+java+ejs+python+c+shell" />
--->
+const unexpectedEndOfInput = "unexpected end of input"
 
+const anyChar: Parsec<char> = it => it.hasNext()
+  ? success(it.next(), it.curr())
+  : error(it, unexpectedEndOfInput)
 
+const pchar = (c: char): Parsec<char> =>
+  attempt(bind(anyChar, it => it == c ? pure(c) : fail(`expected: ${c}`)))
 
-
-
-
+```
