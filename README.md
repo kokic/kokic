@@ -33,14 +33,6 @@ const attempt = <α>(p: Parsec<α>): Parsec<α> =>
     .with({ type: 'error' }, ({ err }) => error<α>(it, err))
     .exhaustive()
 
-const pstring = (s: string): Parsec<string> =>
-  (it: StringIterator 
-    , pos = it.forward(s.length)
-    , substr = it.extract(pos)) =>
-    substr == s
-      ? success(pos, substr)
-      : error(it, `expected: ${s}`)
-
 const unexpectedEndOfInput = "unexpected end of input"
 
 const anyChar: Parsec<char> = it => it.hasNext()
