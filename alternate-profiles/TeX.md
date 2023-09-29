@@ -10,7 +10,7 @@
   $\raise{-0.45em}{\downarrow\kern{-6.66pt}{\raise{0.9em}|}}$
 
 - long nearrow
-  $\raise{0.01em}{\raise{-0.05em}{\kern{1em}{\nearrow}}\kern{-1.77em}{\raise{-0.9em}\diagup}}$
+  $\raise{0.45em}{\raise{0.01em}{\raise{-0.05em}{\kern{1em}{\nearrow}}\kern{-1.77em}{\raise{-0.9em}\diagup}}}$
 
 
 ---
