@@ -16,22 +16,22 @@ const pure = <α>(a: α): Parsec<α> => it => success(it, a)
 
 const bind = <α, β>(f: Parsec<α>, g: (a: α) => Parsec<β>): Parsec<β> =>
   (it: StringIterator) => match(f(it))
-    .with({ type: 'success' }, ({ pos, res }) => g(res)(pos))
-    .with({ type: 'error' }, ({ pos, err }) => error<β>(pos, err))
+    .with({ type: "success" }, ({ pos, res }) => g(res)(pos))
+    .with({ type: "error" }, ({ pos, err }) => error<β>(pos, err))
     .exhaustive()
 
 const fail = <α>(msg: string): Parsec<α> => it => error(it, msg)
 
 const orElse = <α>(p: Parsec<α>, q: Parsec<α>): Parsec<α> =>
   (it: StringIterator) => match(p(it))
-    .with({ type: 'success' }, r => r)
-    .with({ type: 'error' }, r => it == r.pos ? q(it) : r)
+    .with({ type: "success" }, r => r)
+    .with({ type: "error" }, r => it == r.pos ? q(it) : r)
     .exhaustive()
 
 const attempt = <α>(p: Parsec<α>): Parsec<α> =>
   (it: StringIterator) => match(p(it))
-    .with({ type: 'success' }, r => r)
-    .with({ type: 'error' }, ({ err }) => error<α>(it, err))
+    .with({ type: "success" }, r => r)
+    .with({ type: "error" }, ({ err }) => error<α>(it, err))
     .exhaustive()
 
 const unexpectedEndOfInput = "unexpected end of input"
