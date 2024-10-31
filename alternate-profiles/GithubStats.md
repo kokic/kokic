@@ -7,8 +7,8 @@
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kokic&exclude=js,html,python,java,cpp)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=kokic)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=kokic&layout=compact&hide=html+javascript+stylus+css+java+ejs+python+shell+cpp+c+kotlin+julia)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=kokic&layout=compact&hide=html+stylus+css+ejs+haskell+lean+tex+typst+shell+ocaml+rust+julia+typescript)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=kokic&layout=compact&hide=html,javascript,stylus,css,java,ejs,python,shell,cpp,c,kotlin,julia)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=kokic&layout=compact&hide=html,stylus,css,ejs,haskell,lean,tex,typst,shell,ocaml,rust,julia,typescript)
 
 
 </div>
